@@ -11,8 +11,8 @@ import MapKit
 
 class MapController:
     UIViewController,
-    MKMapViewDelegate {
-
+    MKMapViewDelegate,
+    UIGestureRecognizerDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print("Um pino foi selecionado no mapa")
@@ -23,6 +23,12 @@ class MapController:
 
         // Do any additional setup after loading the view.
         vrMap.delegate = self
+    }
+    
+    @IBAction func handleCall(_ sender: Any) {
+        if let url = URL(string: "tel://\(99999999)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,6 +50,25 @@ class MapController:
         vrMap.setRegion(regiao, animated: true)
         
     }
+    
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        
+        //recuperei a posicao(x,y) onde houve o toque
+        let ponto = gestureRecognizer.location(in: vrMap)
+        
+        //transformei a pos(x,y) em  coordenadas do mapa (latitude e kongitude)
+        let coordenadas = vrMap.convert(ponto, toCoordinateFrom: vrMap)
+
+        
+        let pino = MKPointAnnotation()
+        pino.title = "nova anotacao"
+        pino.coordinate = coordenadas
+        vrMap.addAnnotation(pino)
+        
+        print("um long press aconteceu")
+        return true
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
