@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5757DF9B2246699200A39DAF /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5757DF9A2246699200A39DAF /* MapController.swift */; };
 		57EA2C002245B6C500CA9A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EA2BFF2245B6C500CA9A0C /* AppDelegate.swift */; };
 		57EA2C022245B6C500CA9A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EA2C012245B6C500CA9A0C /* ViewController.swift */; };
 		57EA2C052245B6C500CA9A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EA2C032245B6C500CA9A0C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5757DF9A2246699200A39DAF /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		57EA2BFC2245B6C500CA9A0C /* MyPhomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EA2BFF2245B6C500CA9A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57EA2C012245B6C500CA9A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				57EA2BFF2245B6C500CA9A0C /* AppDelegate.swift */,
 				57EA2C012245B6C500CA9A0C /* ViewController.swift */,
 				57EA2C032245B6C500CA9A0C /* Main.storyboard */,
+				5757DF9A2246699200A39DAF /* MapController.swift */,
 				57EA2C092245B6C500CA9A0C /* Assets.xcassets */,
 				57EA2C0B2245B6C500CA9A0C /* LaunchScreen.storyboard */,
 				57EA2C0E2245B6C500CA9A0C /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5757DF9B2246699200A39DAF /* MapController.swift in Sources */,
 				57EA2C022245B6C500CA9A0C /* ViewController.swift in Sources */,
 				57EA2C082245B6C500CA9A0C /* MyPhomeApp.xcdatamodeld in Sources */,
 				57EA2C002245B6C500CA9A0C /* AppDelegate.swift in Sources */,
